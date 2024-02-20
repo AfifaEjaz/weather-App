@@ -10,32 +10,45 @@
 
 <!-- <button onclick="chck()">chck</button> -->
 
-<div class="search-bar">
-    <span>Enter Country</span>
-    <input type="text" id="country">
-    <button type="button" id="searchButton">search</button>
-</div>
-<div class="container">
-    <div class="upper-part">
-        <h3>Weather App</h3>
-        <img src="/images/snow.png" alt="Loading..">
-    <h1>16°</h1>
-    <span>Cloudy</span>
-    <span>wednesday, 31 March</span>
-    </div>
 
-    <table>
-        <tr>
-            <td>Feals like</td>
-            <td>Wind</td>
-        </tr>
-        <tr>
-            <td>Humidity</td>
-            <td>Pressure</td>
-        </tr>
-    </table>
+
+<div class="main">
+
+    <div class="search-bar">
+        <span>Enter Country</span>
+        <input type="text" id="country">
+        <button type="button" id="searchButton">search</button>
+    </div>
+    <div class="container">
+
+        <div class="upper-part">
+            <h3>Weather App</h3>
+            <h2 id="location">Rampur</h2>
+            <img src="/images/snow.png" alt="Loading..">
+        <h1 id="temperature"></h1><span>°</span>
+        <span>Cloudy</span>
+        <span>wednesday, 31 March</span>
+        </div>
     
+    
+        
+        <table>
+            <tr>
+                <td>Feals like:<span id="fl"></span></td>
+                <td>Wind: <span id="wd"></span></td>
+                <td>cloud pct: <span id="cld-pct"></span></td>
+            </tr>
+            <tr>
+                <td >Humidity <span id="hm"></span></td>
+                <td >Max temp <span id="maxtmp"></span></td>
+                <td >Min temp <span id="mintmp"></span></td>
+    
+            </tr>
+        </table>
+        
+    </div>
 </div>
+
     
     <script type="module" src="app.js"></script>
 </body>
