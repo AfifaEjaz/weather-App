@@ -13,8 +13,21 @@ body {
     justify-content: center;
 }
 
-.search-bar{
+.search-bar {
     margin: 30px 10px;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 7px 7px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 7px 10px;
+    background-color: rgb(70, 62, 101);
+    color: aliceblue;
+    border-radius: 12px;
 }
 
 .container {
@@ -49,10 +62,11 @@ th {
     text-align: left;
 }
 
-th,td {
+th,
+td {
     padding: 5px;
-    border: 1px solid ;
-    border-radius: 10px;
+    border-left: 1px solid;
+    border-radius: 6px;
     color: white;
     background-clip: padding-box;
 }

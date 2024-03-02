@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- <button onclick="chck()">chck</button> -->
+    <div class="main">
 
-
-
-<div class="main">
-
-    <div class="search-bar">
-        <span>Enter Country</span>
-        <input type="text" id="country">
-        <button type="button" id="searchButton">search</button>
-    </div>
-    <div class="container">
-
-        <div class="upper-part">
-            <h3>Weather App</h3>
-            <h2 id="location">Rampur</h2>
-            <img src="/images/snow.png" alt="Loading..">
-        <h1 id="temperature"></h1><span>°</span>
-        <span>Cloudy</span>
-        <span>wednesday, 31 March</span>
+        <div class="search-bar">
+            <input type="text" id="country" placeholder="Enter City">
+            <button type="button" id="searchButton">search</button>
         </div>
-    
-    
         
-        <table>
-            <tr>
-                <td>Feals like:<span id="fl"></span></td>
-                <td>Wind: <span id="wd"></span></td>
-                <td>cloud pct: <span id="cld-pct"></span></td>
-            </tr>
-            <tr>
-                <td >Humidity <span id="hm"></span></td>
-                <td >Max temp <span id="maxtmp"></span></td>
-                <td >Min temp <span id="mintmp"></span></td>
-    
-            </tr>
-        </table>
-        
-    </div>
-</div>
+        <div class="container">
 
-    
+            <div class="upper-part">
+                <h3>Weather App</h3>
+                <h2 id="location"></h2>
+                <img id="image" src="" >
+                <h1 id="temperature"></h1>
+                <br>
+                <span id="weather"></span>
+                <span id="currentDate">wednesday, 31 March</span>
+            </div>
+
+
+
+            <table>
+                <tr>
+                    <td>Feels like:<span id="fl"></span></td>
+                    <td>Wind: <span id="wd"></span></td>
+                    <td>cloud pct: <span id="cld-pct"></span></td>
+                </tr>
+                <tr>
+                    <td>Humidity <span id="hm"></span></td>
+                    <td>Max temp <span id="maxtmp"></span></td>
+                    <td>Min temp <span id="mintmp"></span></td>
+
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
     <script type="module" src="app.js"></script>
 </body>
+
 </html>
